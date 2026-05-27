@@ -15,136 +15,49 @@
             --ready: #00ff66;
             --warn: #ff9900;
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-        body { background-color: var(--bg-main); color: var(--text-main); text-align: center; padding: 15px; padding-bottom: 40px; -webkit-font-smoothing: antialiased; }
-        
+        body { background-color: var(--bg-main); color: var(--text-main); text-align: center; padding: 15px; padding-bottom: 40px; }
         header { 
             background: linear-gradient(145deg, #16161c, #101014);
-            padding: 35px 20px; 
-            border-radius: 24px; 
-            margin-bottom: 25px; 
-            border: 1px solid rgba(212, 175, 55, 0.4);
+            padding: 35px 20px; border-radius: 24px; margin-bottom: 25px; border: 1px solid rgba(212, 175, 55, 0.4);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--gold-glow);
         }
-        
-        .logo { 
-            width: 140px; 
-            height: 140px; 
-            border-radius: 50%; 
-            border: 3px solid var(--gold); 
-            box-shadow: 0 0 25px var(--gold-glow); 
-            margin-bottom: 15px; 
-            object-fit: cover; 
-        }
-        
-        header h1 { font-size: 2.8rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .logo { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--gold); box-shadow: 0 0 25px var(--gold-glow); margin-bottom: 15px; object-fit: cover; }
+        header h1 { font-size: 2.8rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; }
         .location { font-size: 1rem; color: var(--text-muted); margin-top: 8px; font-style: italic; display: flex; align-items: center; justify-content: center; gap: 5px; }
-        
-        .motto-box { 
-            background: var(--bg-card); 
-            border-right: 4px solid var(--gold); 
-            border-left: 4px solid var(--gold); 
-            padding: 20px; 
-            margin: 25px 0; 
-            border-radius: 16px; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-        }
+        .motto-box { background: var(--bg-card); border-right: 4px solid var(--gold); border-left: 4px solid var(--gold); padding: 20px; margin: 25px 0; border-radius: 16px; }
         .motto-text { font-size: 1.2rem; font-weight: 700; font-style: italic; line-height: 1.4; }
         .motto-sub { display: block; font-size: 0.95rem; color: #ff3333; margin-top: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
-        
-        .match-btn { 
-            display: block; 
-            background: linear-gradient(135deg, #e5c048, #b08d1a); 
-            color: #000; 
-            padding: 16px 20px; 
-            font-size: 1.1rem; 
-            font-weight: 800; 
-            text-transform: uppercase; 
-            text-decoration: none; 
-            border-radius: 16px; 
-            margin: 25px auto; 
-            max-width: 340px;
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); 
-            transition: all 0.2s ease;
-        }
-
+        .match-btn { display: block; background: linear-gradient(135deg, #e5c048, #b08d1a); color: #000; padding: 16px 20px; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; text-decoration: none; border-radius: 16px; margin: 25px auto; max-width: 340px; box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); }
         h2 { font-size: 1.5rem; font-weight: 800; color: var(--gold); margin: 45px 0 20px; text-transform: uppercase; letter-spacing: 1.5px; text-align: left; padding-left: 5px; display: flex; align-items: center; gap: 8px; }
         h2::before { content: ''; display: inline-block; width: 4px; height: 20px; background: var(--gold); border-radius: 2px; }
-        
         .staff-container { display: flex; gap: 15px; justify-content: space-between; margin-bottom: 25px; }
-        .staff-card { 
-            background: var(--bg-card); 
-            border: 1px solid rgba(255,255,255,0.05); 
-            border-bottom: 3px solid var(--gold);
-            border-radius: 16px; 
-            padding: 18px 10px; 
-            width: 48%; 
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-        }
-        .staff-role { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
-        .staff-name { font-size: 1.15rem; margin-top: 6px; font-weight: 700; color: var(--text-main); }
-
-        /* Поле без багов скролла */
-        .field-container { 
-            background: linear-gradient(90deg, #1b4d1b 50%, #225c22 50%);
-            background-size: 40px 100%;
-            border: 4px solid #ffffff; 
-            border-radius: 20px; 
-            padding: 20px 10px; 
-            max-width: 450px; 
-            margin: 0 auto 30px; 
-            position: relative; 
-            box-shadow: inset 0 0 40px rgba(0,0,0,0.6), 0 10px 25px rgba(0,0,0,0.5); 
-        }
+        .staff-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-bottom: 3px solid var(--gold); border-radius: 16px; padding: 18px 10px; width: 48%; }
+        .staff-role { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+        .staff-name { font-size: 1.15rem; margin-top: 6px; font-weight: 700; }
+        .field-container { background: linear-gradient(90deg, #1b4d1b 50%, #225c22 50%); background-size: 40px 100%; border: 4px solid #ffffff; border-radius: 20px; padding: 20px 10px; max-width: 450px; margin: 0 auto 30px; position: relative; box-shadow: inset 0 0 40px rgba(0,0,0,0.6); }
         .field-line { position: absolute; top: 50%; left: 0; right: 0; height: 3px; background: rgba(255,255,255,0.6); transform: translateY(-50%); }
         .field-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border: 3px solid rgba(255,255,255,0.6); border-radius: 50%; }
         .field-penalty { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 160px; height: 60px; border: 3px solid rgba(255,255,255,0.6); border-bottom: none; }
         .field-penalty-top { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 160px; height: 60px; border: 3px solid rgba(255,255,255,0.6); border-top: none; }
-        
         .field-row { display: flex; justify-content: space-around; margin: 35px 0; position: relative; z-index: 2; }
         .field-player { display: flex; flex-direction: column; align-items: center; }
-        .player-badge { 
-            width: 44px; 
-            height: 44px; 
-            background: linear-gradient(135deg, #1c1c22, #0a0a0c); 
-            color: var(--gold); 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-weight: 800; 
-            font-size: 1.1rem;
-            border: 2px solid var(--gold); 
-            box-shadow: 0 6px 12px rgba(0,0,0,0.6), 0 0 8px var(--gold-glow); 
-        }
-        .player-field-name { font-size: 0.8rem; font-weight: 700; color: #fff; background: rgba(10,10,12,0.85); padding: 3px 8px; border-radius: 6px; margin-top: 6px; border: 1px solid rgba(255,255,255,0.1); }
-
+        .player-badge { width: 44px; height: 44px; background: linear-gradient(135deg, #1c1c22, #0a0a0c); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; border: 2px solid var(--gold); box-shadow: 0 6px 12px rgba(0,0,0,0.6); }
+        .player-field-name { font-size: 0.8rem; font-weight: 700; color: #fff; background: rgba(10,10,12,0.85); padding: 3px 8px; border-radius: 6px; margin-top: 6px; }
         .trophy-container { display: flex; gap: 15px; justify-content: space-between; margin-bottom: 25px; }
-        .trophy-card { 
-            background: linear-gradient(145deg, #16161c, #121216); 
-            border: 1px solid rgba(212,175,55,0.15); 
-            border-radius: 18px; 
-            padding: 20px 10px; 
-            width: 48%; 
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-        }
+        .trophy-card { background: linear-gradient(145deg, #16161c, #121216); border: 1px solid rgba(212,175,55,0.15); border-radius: 18px; padding: 20px 10px; width: 48%; }
         .trophy-icon { font-size: 1.8rem; margin-bottom: 5px; }
         .trophy-season { font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; }
         .trophy-count { font-size: 0.95rem; color: var(--gold); font-weight: 800; margin-top: 5px; }
-
         .derby-summary { background: var(--bg-card); border-radius: 18px; padding: 20px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-around; align-items: center; }
         .derby-stat { display: flex; flex-direction: column; align-items: center; }
         .derby-val { font-size: 1.8rem; font-weight: 800; }
         .derby-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 4px; font-weight: 600; }
-
         .form-container { display: flex; justify-content: center; gap: 8px; margin: 15px 0 25px; align-items: center; }
         .form-title { font-size: 1rem; color: var(--text-muted); margin-right: 10px; text-transform: uppercase; font-weight: 600; }
         .form-circle { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; color: #000; }
         .form-w { background-color: var(--ready); }
         .form-l { background-color: #ff3333; }
-
-        /* Фикс прокрутки: убрали max-height и overflow */
         .matches-list { background: var(--bg-card); border-radius: 18px; padding: 8px; border: 1px solid rgba(255,255,255,0.05); text-align: left; margin-bottom: 30px; }
         .match-row { display: flex; justify-content: space-between; padding: 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 0.95rem; align-items: center; }
         .match-row:last-child { border-bottom: none; }
@@ -152,22 +65,38 @@
         .match-score { font-weight: 700; color: var(--gold); background: #1c1c24; padding: 4px 10px; border-radius: 8px; font-family: monospace; border: 1px solid rgba(255,255,255,0.05); }
         .status-win { color: var(--ready); font-weight: 800; background: rgba(0,255,102,0.1); padding: 3px 8px; border-radius: 6px; }
         .status-lose { color: #ff3333; font-weight: 800; background: rgba(255,51,51,0.1); padding: 3px 8px; border-radius: 6px; }
-
         .player-cards-container { display: flex; flex-direction: column; gap: 12px; text-align: left; }
-        .player-card { 
-            background: linear-gradient(90deg, #121216 0%, #16161c 100%); 
-            border-radius: 16px; 
-            border: 1px solid rgba(255,255,255,0.04); 
-            padding: 14px 16px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-        }
+        .player-card { background: linear-gradient(90deg, #121216 0%, #16161c 100%); border-radius: 16px; border: 1px solid rgba(255,255,255,0.04); padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
         .player-info-block { display: flex; flex-direction: column; gap: 4px; }
         .player-meta { font-size: 1.05rem; font-weight: 700; color: #fff; }
         .player-pos-tag { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; background: rgba(255,255,255,0.05); padding: 1px 6px; border-radius: 4px; margin-left: 6px; }
         .player-market-val { font-size: 0.85rem; color: var(--gold); font-weight: 600; }
-        
         .health-status-block { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; }
         .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
         .dot-ready { background-color: var(--ready); box-shadow: 0 0 8px var(--ready); }
+        .dot-warn { background-color: var(--warn); box-shadow: 0 0 8px var(--warn); }
+        footer { margin-top: 60px; font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; text-align: left; line-height: 1.6; }
+        footer b { color: #e2e2e9; }
+        .footer-copyright { margin-top: 15px; font-size: 0.8rem; color: #44444f; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://postimg.cc" alt="Salcamar FC Логотип" class="logo">
+        <h1>Salcamar FC</h1>
+        <div class="location">📍 <span>Жлобин, Беларусь (основан в 2024)</span></div>
+    </header>
+    <div class="motto-box">
+        <p class="motto-text">«Бобр курва наш девиз — кто не согласен, сразу вниз!»</p>
+        <span class="motto-sub">Мы одна — КОМАНДА!</span>
+    </div>
+    <a href="https://vk.com" target="_blank" class="match-btn">⚔️ Вызвать на матч</a>
+    <h2>Штаб Руководства</h2>
+    <div class="staff-container">
+        <div class="staff-card"><div class="staff-role">📋 Главный Тренер</div><div class="staff-name">Леонков Роман</div></div>
+        <div class="staff-card"><div class="staff-role">🎗️ Капитан Клуба</div><div class="staff-name">Бойкачёв Матвей</div></div>
+    </div>
+    <h2>Тактическая Схема (2-1-3)</h2>
+    <div class="field-container">
+        <div class="field-line"></div><div class="field-center"></div><div class="field-penalty-top"></div><div class="field-penalty"></div>
+        <div class="field-row">
