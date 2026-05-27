@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -89,10 +89,21 @@
         .ovr-badge { position: absolute; top: 12px; left: 15px; background: linear-gradient(135deg, #d4af37, #aa8513); color: #000; font-weight: 900; font-size: 1.1rem; padding: 2px 7px; border-radius: 6px; }
         .player-card .p-num { font-size: 1.4rem; font-weight: 900; color: rgba(212, 175, 55, 0.25); position: absolute; top: 12px; right: 15px; }
         .player-card .p-icon { font-size: 2.2rem; margin: 15px 0 10px; }
-        .player-card .p-name { font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+        .player-card .p-name { font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
+        .player-value { font-size: 0.75rem; color: #aaa; margin-bottom: 12px; font-weight: bold; }
         .player-skills { width: 100%; border-top: 1px solid #222; padding-top: 10px; display: flex; flex-direction: column; gap: 4px; text-align: left; }
         .skill-line { display: flex; justify-content: space-between; font-size: 0.8rem; color: #aaa; font-weight: 600; }
         .skill-line span:last-child { color: #d4af37; font-weight: 700; }
+
+        .staff-container { background: #111; border: 1px solid rgba(212,175,55,0.3); border-radius: 16px; padding: 20px; max-width: 500px; margin: 30px auto; text-align: left; }
+        .staff-row { display: flex; justify-content: space-between; padding: 10px 5px; border-bottom: 1px solid #222; }
+        .staff-row:last-child { border-bottom: none; }
+        .staff-role { color: #aaa; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; }
+        .staff-name { font-weight: 800; color: #d4af37; }
+
+        .matches-list { background: #111; border-radius: 16px; padding: 10px; border: 1px solid #222; max-height: 320px; overflow-y: auto; text-align: left; }
+        .match-row { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #1f1f1f; align-items: center; }
+        .match-score { font-weight: 800; color: #d4af37; background: #1f1f1f; padding: 6px 14px; border-radius: 8px; font-family: monospace; }
 
         footer { margin-top: 70px; font-size: 0.85rem; color: #444; border-top: 1px solid #222; padding: 35px 10px; line-height: 1.6; text-align: center; }
     </style>
@@ -111,27 +122,4 @@
         <span class="motto-sub">Мы одна — КОМАНДА!</span>
     </div>
 
-    <a href="https://vk.com" target="_blank" class="match-btn">Организовать матч с клубом</a>
-
-    <h2>Стартовый состав (Схема 2-1-3)</h2>
-    <div class="pitch-container">
-        <div class="pitch-center-line"></div>
-        <div class="pitch-center-circle"></div>
-        <div class="pitch-penalty-top"></div>
-        <div class="pitch-penalty-bot"></div>
-        
-        <div class="pitch-player" style="bottom: 25px; left: 50%;">
-            <div class="pitch-dot" style="background: #ffcc00; color: #000; border-color: #000;">23</div>
-            <div class="pitch-pname">М. Бойкачёв (ВРТ)</div>
-        </div>
-        <div class="pitch-player" style="bottom: 120px; left: 30%;">
-            <div class="pitch-dot">4</div>
-            <div class="pitch-pname">М. Малевич (ЛЗ)</div>
-        </div>
-        <div class="pitch-player" style="bottom: 120px; left: 70%;">
-            <div class="pitch-dot">5</div>
-            <div class="pitch-pname">М. Матарас (ПЗ)</div>
-        </div>
-        <div class="pitch-player" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
-
-            
+    
